@@ -46,6 +46,11 @@ namespace Source
             if (this == null)
                 return;
 
+            EconomyService.Instance.PlayerInventory.PlayersInventoryItemUpdated += playersInventoryItemID => 
+            {
+                _inventoryWindow.Refresh(inventoryResult.PlayersInventoryItems);
+            };
+            
             _inventoryWindow.Refresh(inventoryResult.PlayersInventoryItems);
         }
     

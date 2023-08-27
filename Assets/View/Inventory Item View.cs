@@ -3,8 +3,10 @@ using UnityEngine.UI;
 
 namespace View
 {
-    public class InventoryItemView : MonoBehaviour
+    public class InventoryCellView : MonoBehaviour
     {
+        [field:SerializeField] public int Quantity { get; set; }
+        
         [SerializeField] private Image _iconImage;
         
         [Header("Sprites")]

@@ -1,6 +1,7 @@
 using System;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
+using Unity.Services.Economy;
 using UnityEngine;
 
 namespace Source
@@ -24,6 +25,7 @@ namespace Source
                         return;
                 }
 
+                await EconomyService.Instance.Configuration.SyncConfigurationAsync();
                 await EconomyManager.Instance.RefreshInventory();
             }
             catch (Exception e)

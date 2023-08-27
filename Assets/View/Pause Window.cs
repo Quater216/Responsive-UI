@@ -1,5 +1,7 @@
+using System;
 using Source;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
 namespace View
@@ -9,8 +11,14 @@ namespace View
         public bool IsOpened { get; private set; }
         
         [SerializeField] private Canvas _canvas;
+        [SerializeField] private Button _menuButton;
 
         [Inject] private PauseManager _pauseManager;
+
+        private void Start()
+        {
+            _menuButton.onClick.AddListener(OnMenuButtonClicked);
+        }
 
         public void Open()
         {
@@ -24,6 +32,11 @@ namespace View
             _canvas.enabled = false;
             _pauseManager.SetPaused(false);
             IsOpened = false;
+        }
+
+        private void OnMenuButtonClicked()
+        {
+            Debug.Log("Go to menu");
         }
     }
 }

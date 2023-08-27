@@ -74,6 +74,17 @@
                     "action": "Close Window",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8b9258dc-b97f-4e83-afbc-afe2f30f177b",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Close Window",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
