@@ -1,0 +1,122 @@
+{
+    "name": "UI Controls",
+    "maps": [
+        {
+            "name": "HUD",
+            "id": "2df5d088-df44-4c06-a7d3-3f377b8f39a8",
+            "actions": [
+                {
+                    "name": "Open Inventory Window",
+                    "type": "Button",
+                    "id": "fc4187c9-174f-4a2b-bb65-5154be2ef1da",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Open Pause Window",
+                    "type": "Button",
+                    "id": "eb7531c1-5257-4f5e-9b2a-0c114cd54359",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a150219c-13dd-45b1-aecf-15e04645422d",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Open Inventory Window",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "988fd75a-774e-40fa-8b64-c2f50c7a7917",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Open Pause Window",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Inventory Window",
+            "id": "7290777e-8eb1-4434-8b82-86f141119691",
+            "actions": [
+                {
+                    "name": "Close Window",
+                    "type": "Button",
+                    "id": "edabad8a-66eb-4a5b-ac7e-c766c4096791",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "998e4453-e7b3-4f8b-9178-79b7c8eee195",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Close Window",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Pause Window",
+            "id": "de769744-9fa2-4bde-99a0-60aacc3d13e3",
+            "actions": [
+                {
+                    "name": "Close Window",
+                    "type": "Button",
+                    "id": "ef1addb6-0438-447c-b30c-c33d065e4365",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b7131c7f-c09d-4385-a4a7-2bf79daec119",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Close Window",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Control scheme",
+            "bindingGroup": "Control scheme",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
